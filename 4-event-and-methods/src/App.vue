@@ -16,15 +16,24 @@
 
 <button @click="addNumber(100)">@click="addNumber(100)"</button><br/><br/>
 
+<b>-----------------------</b><br/>
 
+<label>Input Text</label>
+<input type="text" placeholder="call 1 fun on keyup" v-on:keyup="textInput">
 
+<input type="text" placeholder="call 2 fun on kepup" v-on:keyup="textInput($event);add()" >
+<h3>Input Text Value</h3>
+{{ textInputValue }} <br/>
+{{ count }}
 </template>
 
 <script>
+
 export default{
   data(){
     return {
-      count:0
+      count:0,
+      textInputValue:''
     }
   },
   methods:{
@@ -38,6 +47,9 @@ export default{
     addNumber(num)
     {
       this.count += num;
+    },
+    textInput(event){
+      this.textInputValue = event.target.value;
     }
   }
 }
