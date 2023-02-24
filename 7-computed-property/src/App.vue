@@ -1,5 +1,5 @@
 <template>
-  <h1>Drawback of method.  </h1><br/>
+  <h1>Drawback of method resolved by computed (in computed property we cant change the property value) </h1><br/>
 
   <h3>click add button and see the console log  </h3>
 
@@ -34,6 +34,9 @@ export default{
     formatedInputValue()
     {
       console.log('executed when only input is changed');
+
+      //this.count += 5;  ==> ERROR
+       
       return '==>'+this.inputText 
     }
   }
