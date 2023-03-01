@@ -1,5 +1,5 @@
 <template>
-    <h5 >my new component</h5>
+    <h5>Global Component</h5>
 </template>
 
 <style>

@@ -1,24 +1,25 @@
 <template>
-  <new-component></new-component>
+  <global-component></global-component>
 
-  <new-component></new-component>
+  <global-component></global-component>
 
-  <new-component></new-component>
+  <global-component></global-component>
+<br/>
+  <h>--------------------------------</h>
 
-  <new-component></new-component>
+  <LocalComponent></LocalComponent>
 
-  <new-component></new-component>
+  <LocalComponent></LocalComponent>
+
+  <LocalComponent></LocalComponent>
 </template>
 
-
 <script>
-
-import newComponent from './components/new-component.vue'
+import LocalComponent from './components/Component-2-local-component.vue';
 
 export default{
-  components:{
-    newComponent
-  }
+  components:{LocalComponent}
 }
 
 </script>
+
